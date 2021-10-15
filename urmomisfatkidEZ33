@@ -1,0 +1,239 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local mainframe = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local darkhub = Instance.new("TextButton")
+local TextButton_Roundify_12px = Instance.new("ImageLabel")
+local solarishub = Instance.new("TextButton")
+local solarishub_Roundify_12px = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local ulitityframe = Instance.new("Frame")
+local invisiblefe = Instance.new("TextButton")
+local Main = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local utility = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+main.BackgroundTransparency = 1.000
+main.Position = UDim2.new(0.399414331, 0, 0.224217027, 0)
+main.Size = UDim2.new(0.319709718, 0, 0.311865747, 0)
+main.Image = "rbxassetid://3570695787"
+main.ScaleType = Enum.ScaleType.Slice
+main.SliceCenter = Rect.new(100, 100, 100, 100)
+main.SliceScale = 0.120
+main.Active = true
+main.Draggable = true
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.306253433, 0, -0.00772202387, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "KappaWare"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 37.000
+
+mainframe.Name = "mainframe"
+mainframe.Parent = main
+mainframe.Active = true
+mainframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+mainframe.BackgroundTransparency = 1.000
+mainframe.Position = UDim2.new(0.0170666594, 0, 0.182691246, 0)
+mainframe.Size = UDim2.new(0, 570, 0, 242)
+
+TextLabel_2.Parent = mainframe
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.0107632894, 0, -0.00030952692, 0)
+TextLabel_2.Size = UDim2.new(0, 190, 0, 36)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "HUBS"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 39.000
+TextLabel_2.TextWrapped = true
+
+darkhub.Name = "darkhub"
+darkhub.Parent = mainframe
+darkhub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+darkhub.BorderSizePixel = 0
+darkhub.Position = UDim2.new(0.0183032174, 0, 0.0669985488, 0)
+darkhub.Size = UDim2.new(0, 181, 0, 41)
+darkhub.ZIndex = 2
+darkhub.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+darkhub.Font = Enum.Font.SourceSansBold
+darkhub.Text = " DarkHub"
+darkhub.TextColor3 = Color3.fromRGB(0, 0, 0)
+darkhub.TextSize = 35.000
+darkhub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
+
+TextButton_Roundify_12px.Name = "TextButton_Roundify_12px"
+TextButton_Roundify_12px.Parent = darkhub
+TextButton_Roundify_12px.Active = true
+TextButton_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+TextButton_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_Roundify_12px.BackgroundTransparency = 1.000
+TextButton_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+TextButton_Roundify_12px.Selectable = true
+TextButton_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+TextButton_Roundify_12px.Image = "rbxassetid://3570695787"
+TextButton_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+TextButton_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+TextButton_Roundify_12px.SliceScale = 0.120
+
+solarishub.Name = "solarishub"
+solarishub.Parent = mainframe
+solarishub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+solarishub.BorderSizePixel = 0
+solarishub.Position = UDim2.new(0.0165631473, 0, 0.147755712, 0)
+solarishub.Size = UDim2.new(0, 181, 0, 41)
+solarishub.ZIndex = 2
+solarishub.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+solarishub.Font = Enum.Font.SourceSansBold
+solarishub.Text = "SolarisHub"
+solarishub.TextColor3 = Color3.fromRGB(0, 0, 0)
+solarishub.TextSize = 35.000
+solarishub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
+
+solarishub_Roundify_12px.Name = "solarishub_Roundify_12px"
+solarishub_Roundify_12px.Parent = solarishub
+solarishub_Roundify_12px.Active = true
+solarishub_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+solarishub_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+solarishub_Roundify_12px.BackgroundTransparency = 1.000
+solarishub_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+solarishub_Roundify_12px.Selectable = true
+solarishub_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+solarishub_Roundify_12px.Image = "rbxassetid://3570695787"
+solarishub_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+solarishub_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+solarishub_Roundify_12px.SliceScale = 0.120
+
+Frame.Parent = main
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.650
+Frame.Position = UDim2.new(0.0110492501, 0, 0.182691246, 0)
+Frame.Size = UDim2.new(0, 574, 0, 243)
+
+UIAspectRatioConstraint.Parent = main
+UIAspectRatioConstraint.AspectRatio = 1.907
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = main
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(137, 0, 254)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(223, 0, 255))}
+UIGradient.Parent = main
+
+ulitityframe.Name = "ulitityframe"
+ulitityframe.Parent = main
+ulitityframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ulitityframe.BackgroundTransparency = 1.000
+ulitityframe.Position = UDim2.new(0.0120654935, 0, 0.182691246, 0)
+ulitityframe.Size = UDim2.new(0, 573, 0, 242)
+ulitityframe.Visible = false
+
+invisiblefe.Name = "invisiblefe"
+invisiblefe.Parent = ulitityframe
+invisiblefe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+invisiblefe.Position = UDim2.new(0.695501328, 0, 0.0467266999, 0)
+invisiblefe.Size = UDim2.new(0, 157, 0, 43)
+invisiblefe.Style = Enum.ButtonStyle.RobloxRoundDefaultButton
+invisiblefe.Font = Enum.Font.SourceSansBold
+invisiblefe.Text = "InvisibleFE"
+invisiblefe.TextColor3 = Color3.fromRGB(0, 0, 0)
+invisiblefe.TextSize = 28.000
+invisiblefe.TextWrapped = true
+invisiblefe.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://pastebin.com/raw/SZQXeb5g',true))()
+end)
+
+Main.Name = "Main"
+Main.Parent = main
+Main.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.0552335158, 0, 0.0251744911, 0)
+Main.Size = UDim2.new(0, 124, 0, 35)
+Main.ZIndex = 2
+Main.Font = Enum.Font.GothamSemibold
+Main.Text = "Main"
+Main.TextColor3 = Color3.fromRGB(255, 255, 255)
+Main.TextScaled = true
+Main.TextSize = 35.000
+Main.TextWrapped = true
+
+UICorner_2.Parent = Main
+
+utility.Name = "utility"
+utility.Parent = main
+utility.BackgroundColor3 = Color3.fromRGB(77, 100, 150)
+utility.BorderSizePixel = 0
+utility.Position = UDim2.new(0.707589626, 0, 0.0215357244, 0)
+utility.Size = UDim2.new(0, 124, 0, 33)
+utility.ZIndex = 2
+utility.Font = Enum.Font.GothamSemibold
+utility.Text = "Utility"
+utility.TextColor3 = Color3.fromRGB(255, 255, 255)
+utility.TextScaled = true
+utility.TextSize = 14.000
+utility.TextWrapped = true
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = utility
+
+-- Scripts:
+
+local function CQAZGOZ_fake_script() -- main.LocalScript 
+	local script = Instance.new('LocalScript', main)
+
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "n" then
+			script.Parent.Visible = true
+		end
+	end)
+	
+	local Plr = game.Players.LocalPlayer
+	
+	Plr:GetMouse().KeyDown:Connect(function(K)
+		if K == "m" then
+			script.Parent.Visible = false
+		end
+	end)
+end
+coroutine.wrap(CQAZGOZ_fake_script)()
+local function IGQW_fake_script() -- Main.LocalScript 
+	local script = Instance.new('LocalScript', Main)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.mainframe.Visible = true
+		script.Parent.Parent.utilityframe.Visible = false
+		wait(0.1)
+	end)
+end
+coroutine.wrap(IGQW_fake_script)()
+local function EXGKVZJ_fake_script() -- utility.LocalScript 
+	local script = Instance.new('LocalScript', utility)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.mainframe.Visible = false
+	    script.Parent.Parent.utilityframe.Visible = true
+		wait(0.1)
+	end)
+end
+coroutine.wrap(EXGKVZJ_fake_script)()
